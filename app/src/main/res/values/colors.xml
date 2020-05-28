@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#39933C</color>
+    <color name="colorPrimaryDark">#28602A</color>
+    <color name="colorAccent">#4CAF50</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="black_trancparent">#26000000</color>
+    <color name="gray_f7f7f7">#f7f7f7</color>
+    <color name="white">#ffffff</color>
+    <color name="pin_normal">#6B767E</color>
+    <color name="gray_454545">#454545</color>
+    <color name="green_009e4e">#009e4e</color>
+    <color name="gray_f2f2f2">#f2f2f2</color>
+    <color name="gray_434343">#434343</color>
+    <color name="gray_484848">#484848</color>
+    <color name="gray_3b3a3a">#3b3a3a</color>
+    <color name="gray_9d9d9d">#9d9d9d</color>
+    <color name="lightGray">#e2e2e2</color>
+    <color name="pink">#fcf8f7</color>
+    <color name="green">#d7edea</color>
+    <color name="orange">#EBEA420C</color>
+</resources>

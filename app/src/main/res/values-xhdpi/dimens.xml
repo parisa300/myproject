@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Padding Obj_Size -->
+    <dimen name="padding_xxbit">0.4dp</dimen>
+    <dimen name="padding_xbit">1dp</dimen>
+    <dimen name="padding_bit">4dp</dimen>
+    <dimen name="padding_small">6dp</dimen>
+    <dimen name="padding_medium">9dp</dimen>
+    <dimen name="padding_large">12dp</dimen>
+
+    <!-- Font Obj_Size -->
+    <dimen name="font_xxxsmall">7sp</dimen>
+    <dimen name="font_xxsmall">10sp</dimen>
+    <dimen name="font_xsmall">13sp</dimen>
+    <dimen name="font_small">15sp</dimen>
+    <dimen name="font_medium">18sp</dimen>
+    <dimen name="font_large">23sp</dimen>
+    <dimen name="font_xlarge">32sp</dimen>
+
+    <!-- Dimen Obj_Size -->
+    <dimen name="dimen_small">15dp</dimen>
+    <dimen name="dimen_medium">25dp</dimen>
+    <dimen name="dimen_large">35dp</dimen>
+    <dimen name="dimen_xlarge">45dp</dimen>
+    <dimen name="dimen_xxlarge">55dp</dimen>
+
+
+    <!-- custom -->
+
+    <dimen name="first_name">40dp</dimen>
+
+
+    <dimen name="height_slider_main">140dp</dimen>
+    <dimen name="height_item_main">140dp</dimen>
+    <dimen name="height_item_article">160dp</dimen>
+    <dimen name="height_item_articlemore">120dp</dimen>
+    <dimen name="width_item_main">120dp</dimen>
+
+
+    <dimen name="height_itemsingle">80dp</dimen>
+    <dimen name="height_item">130dp</dimen>
+
+    <dimen name="height_Appbar_course">230dp</dimen>
+    <dimen name="height_Appbar_Anchor">160dp</dimen>
+    <dimen name="height_img_Anchor">110dp</dimen>
+    <dimen name="width_img_Anchor">100dp</dimen>
+    <dimen name="height_text_Anchor">80dp</dimen>
+
+    <dimen name="width_size_status_dl">60dp</dimen>
+
+    <dimen name="height_video">230dp</dimen>
+    <dimen name="height_singelArticle">200dp</dimen>
+
+    <dimen name="size_logo">150dp</dimen>
+    <dimen name="item_play">60dp</dimen>
+    <dimen name="height_item_file">60dp</dimen>
+    <dimen name="height_item_sort">50dp</dimen>
+
+
+    <!--- bg_menu_items_circle -->
+    <dimen name="circle_img">120dp</dimen>
+    <dimen name="size_float">90dp</dimen>
+    <dimen name="level_number">22dp</dimen>
+
+</resources>

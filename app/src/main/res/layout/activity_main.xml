@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    android:background="@color/gray_f7f7f7">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_9d9d9d"
+        app:layout_constraintTop_toTopOf="@id/cl_main" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_medium"
+            android:background="@drawable/bg_circle"
+            android:padding="@dimen/dimen_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+
+            app:layout_constraintEnd_toStartOf="@+id/fab_home_navigationBottom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="profile"
+                android:textColor="@color/gray_9d9d9d"
+                android:textSize="@dimen/font_xxsmall"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_home_navigationBottom"
+            style="@style/SelectableItemBackgroundPraymaryBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:backgroundTint="@color/orange"
+            android:padding="@dimen/padding_bit"
+            android:src="@drawable/ic_plus"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="lollipop" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_reports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_medium"
+            android:background="@drawable/bg_circle"
+            android:padding="@dimen/dimen_small"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:theme="@style/styleRippleWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fab_home_navigationBottom"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/reports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reports"
+                android:textColor="@color/gray_9d9d9d"
+                android:textSize="@dimen/font_xxsmall"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_small"
+        android:padding="@dimen/padding_small"
+        android:text="Status"
+        android:textColor="@color/gray_434343"
+        android:textSize="@dimen/font_large"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:background="@drawable/bg_radius_withe"
+        app:layout_constraintEnd_toStartOf="@+id/cl_todey"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:text="week"
+            android:textColor="@color/gray_434343"
+            android:textSize="@dimen/font_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_todey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:background="@drawable/bg_radius_withe"
+        app:layout_constraintEnd_toStartOf="@+id/cl_month"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cl_week"
+        app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+        <TextView
+            android:id="@+id/tv_todey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:text="todey"
+            android:textColor="@color/gray_434343"
+            android:textSize="@dimen/font_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:background="@drawable/bg_radius_withe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cl_todey"
+        app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:text="month"
+            android:textColor="@color/gray_434343"
+            android:textSize="@dimen/font_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_numberlast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="109"
+        android:textColor="@color/gray_434343"
+        android:textSize="@dimen/font_medium"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/cl_week" />
+
+    <TextView
+        android:id="@+id/tv_lasttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Time"
+
+        android:textColor="@color/gray_434343"
+        android:textSize="@dimen/font_xxsmall"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tv_numberlast"
+        app:layout_constraintStart_toStartOf="@id/tv_numberlast"
+        app:layout_constraintTop_toBottomOf="@id/tv_numberlast" />
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/cl_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/tv_lasttime"
+    android:layout_marginStart="@dimen/dimen_medium"
+    android:layout_marginTop="@dimen/dimen_medium"
+    android:layout_marginEnd="@dimen/dimen_medium"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_large"
+        android:background="@drawable/bg_radius_green_main"
+        app:layout_constraintEnd_toStartOf="@+id/cl_2"
+android:layout_margin="@dimen/padding_medium"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+   app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_numbermin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="87"
+            android:textColor="@color/gray_434343"
+            android:textSize="@dimen/font_medium"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min"
+
+            android:textColor="@color/gray_434343"
+            android:textSize="@dimen/font_small"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/tv_numbermin"
+            app:layout_constraintStart_toStartOf="@id/tv_numbermin"
+            app:layout_constraintTop_toBottomOf="@id/tv_numbermin" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_medium"
+        android:padding="@dimen/padding_large"
+        app:layout_constraintEnd_toStartOf="@+id/cl_3"
+        android:background="@drawable/bg_radius_green_main"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+      app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_numbermax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="128"
+
+            android:textColor="@color/gray_434343"
+            android:textSize="@dimen/font_medium"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max"
+
+            android:textColor="@color/gray_434343"
+            android:textSize="@dimen/font_small"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/tv_numbermax"
+            app:layout_constraintStart_toStartOf="@id/tv_numbermax"
+            app:layout_constraintTop_toBottomOf="@id/tv_numbermax" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/padding_medium"
+        android:padding="@dimen/padding_large"
+        android:background="@drawable/bg_radius_green_main"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cl_2"
+app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_numberavg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="96"
+            android:textColor="@color/gray_434343"
+            android:textSize="@dimen/font_medium"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AVG"
+
+            android:textColor="@color/gray_434343"
+            android:textSize="@dimen/font_small"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/tv_numberavg"
+            app:layout_constraintStart_toStartOf="@id/tv_numberavg"
+            app:layout_constraintTop_toBottomOf="@id/tv_numberavg" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+        app:layout_constraintBottom_toTopOf="@id/tv_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_item">
+
+    </com.github.mikephil.charting.charts.LineChart>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sundey 12-7-2020"
+
+        android:textColor="@color/gray_434343"
+        android:textSize="@dimen/font_small"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/cl_main"
+        app:layout_constraintEnd_toEndOf="@id/chart1"
+        app:layout_constraintStart_toStartOf="@id/chart1"
+        app:layout_constraintTop_toBottomOf="@id/chart1" />
+
+    <FrameLayout
+        android:id="@+id/fl_mains"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/cl_main"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

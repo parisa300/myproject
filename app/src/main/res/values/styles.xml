@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">@color/lightGray</item>
+    </style>
+    <style name="SelectableItemBackgroundPraymaryBorderless">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:clickable">true</item>
+
+    </style>
+    <style name="styleRippleWhite" parent="Theme.AppCompat.NoActionBar"/>
+
+    <style name="styleRippleBlack" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlHighlight">@color/black_trancparent</item>
+    </style>
+
+
+    <style name="styleRipplePrimary" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+
+    <style name="styleRippleWhiteMe" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+    <style name="DilogeCloseTouchFalse" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+</resources>
+

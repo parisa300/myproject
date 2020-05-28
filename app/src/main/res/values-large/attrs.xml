@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PinEntryEditText">
+        <attr name="pinAnimationType" format="enum">
+            <enum name="popIn" value="0"/>
+            <enum name="fromBottom" value="1"/>
+            <enum name="none" value="-1"/>
+        </attr>
+        <attr name="pinCharacterMask" format="string"/>
+        <attr name="pinRepeatedHint" format="string"/>
+        <attr name="pinLineStroke" format="dimension"/>
+        <attr name="pinLineStrokeSelected" format="dimension"/>
+        <attr name="pinCharacterSpacing" format="dimension"/>
+        <attr name="pinTextBottomPadding" format="dimension"/>
+        <attr name="pinLineColors" format="color"/>
+        <attr name="pinBackgroundDrawable" format="reference"/>
+        <attr name="pinBackgroundIsSquare" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="Indicator">
+        <attr name="bar_num" format="integer"/>
+        <attr name="duration" format="integer"/>
+        <attr name="bar_color" format="color"/>
+        <attr name="step_num" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="GADownloadingView">
+
+        <attr name="arrow_color" format="color" />
+        <attr name="loading_circle_back_color" format="color" />
+        <attr name="loading_line_color" format="color" />
+        <attr name="progress_line_color" format="color" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="done_text_color" format="color" />
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Padding Obj_Size -->
+    <dimen name="padding_xxbit">0.9dp</dimen>
+    <dimen name="padding_xbit">2dp</dimen>
+    <dimen name="padding_bit">4dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+
+    <dimen name="padding_medium">14dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+
+
+    <!-- Font Obj_Size -->
+    <dimen name="font_xxxsmall">10sp</dimen>
+    <dimen name="font_xxsmall">13sp</dimen>
+    <dimen name="font_xsmall">16sp</dimen>
+    <dimen name="font_small">18sp</dimen>
+    <dimen name="font_medium">20sp</dimen>
+    <dimen name="font_large">24sp</dimen>
+    <dimen name="font_xlarge">30sp</dimen>
+
+
+    <!-- Dimen Obj_Size -->
+    <dimen name="dimen_small">20dp</dimen>
+    <dimen name="dimen_medium">30dp</dimen>
+    <dimen name="dimen_large">50dp</dimen>
+    <dimen name="dimen_xlarge">70dp</dimen>
+    <dimen name="dimen_xxlarge">80dp</dimen>
+
+    <!-- custom -->
+
+    <dimen name="first_name">60dp</dimen>
+
+    <dimen name="height_slider_main">180dp</dimen>
+    <dimen name="height_item_main">170dp</dimen>
+    <dimen name="height_item_article">200dp</dimen>
+    <dimen name="height_item_articlemore">170dp</dimen>
+    <dimen name="width_item_main">150dp</dimen>
+
+    <dimen name="height_itemsingle">100dp</dimen>
+    <dimen name="height_singelArticle">240dp</dimen>
+
+    <dimen name="height_item">170dp</dimen>
+
+
+    <dimen name="height_Appbar_course">250dp</dimen>
+    <dimen name="height_Appbar_Anchor">180dp</dimen>
+    <dimen name="height_img_Anchor">130dp</dimen>
+    <dimen name="width_img_Anchor">120dp</dimen>
+    <dimen name="height_text_Anchor">90dp</dimen>
+
+
+    <dimen name="size_logo">170dp</dimen>
+    <dimen name="item_play">70dp</dimen>
+    <dimen name="height_item_file">70dp</dimen>
+
+    <dimen name="height_item_sort">70dp</dimen>
+
+    <!--- bg_menu_items_circle -->
+    <dimen name="size_float">110dp</dimen>
+    <dimen name="circle_img">140dp</dimen>
+    <dimen name="level_number">32dp</dimen>
+</resources>
